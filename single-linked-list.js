@@ -42,4 +42,13 @@ class SinglyLinkedList {
         return temp;
 
     }
+
+    popFromFront(){
+        if (this.head === null){
+            return null;
+        }
+        let head = this.head;
+        this.head = head;
+            return head;
+    }
 }
