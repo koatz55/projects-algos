@@ -44,8 +44,12 @@ const insertAt = (arr,index,num) => {
         temp2.push(num);
         for(let i=index; i<arr.length; i++){temp2.push(arr[i]);};
         console.log(temp2);}
-    }
+        arr = temp2
+        console.log(arr);
+        
+        }
 
 let sample4 = new Array(5,5,0,9)
 insertAt(sample4,0,4)
 insertAt(sample4,1,3)
+console.log(sample4,"sample 4 after insert");
