@@ -34,15 +34,16 @@ removeBlanks("red is blank")
 // getDigits("abc8c0d1ngd0j0!8") => 801008
 
 // getDigits("0s1a3y5w7h9a2t4?6!8?0") => 1357924680
-const getDigits = () => {
+const getDigits = (word) => {
+    let newWord = ''
 for(let i=0; i<word.length; i++){
-    if(word[i] != " "){
+    if(isNaN(word[i]) === false  ){
 newWord += word[i] 
 }
 }
 console.log(newWord)
 }
-removeBlanks("red is blank")
+getDigits("0s1a3y5w7h9a2t4?6!8?0")
 
 // Acronyms
 // Create a function that, given a string, returns the string’s acronym (first letter of the word capitalized). You are allowed to use .split() and .toUpperCase().
@@ -55,7 +56,7 @@ const Acronyms = () => {
     let splitSentance = str.split('')
     let acronym = ''
     for(let word in splitSentance) {
-        if(splitSentance(word))
+        if(splitSentance[word]. length > 0 )
     }
 
 }
