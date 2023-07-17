@@ -50,7 +50,15 @@ removeBlanks("red is blank")
 // acronym(" there's no free lunch - gotta pay yer way. ") => "TNFL-GPYW". 
 
 // acronym("Live from New York, it's Saturday Night!") => "LFNYISN".
+// split words then store first letter?
+const Acronyms = () => {
+    let splitSentance = str.split('')
+    let acronym = ''
+    for(let word in splitSentance) {
+        if(splitSentance(word))
+    }
 
+}
 
 
 // Count Non-Spaces
