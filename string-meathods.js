@@ -52,7 +52,7 @@ getDigits("0s1a3y5w7h9a2t4?6!8?0")
 
 // acronym("Live from New York, it's Saturday Night!") => "LFNYISN".
 // split words then store first letter?
-const Acronyms = () => {
+const Acronyms = (str) => {
     let splitSentance = str.split('')
     let acronym = ''
     for(let word in splitSentance) {
